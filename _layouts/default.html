@@ -21,30 +21,21 @@
   </head>
   <body>
 
+    <div class="sidebar">
+      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+      <p class="byline">Software Engineer, <a href="http://www.indeed.com">Indeed.com</a></p>
+      <ul class="navigation">
+        <li><a class="extra" href="/talks">talks</a></li>
+        <li><a class="extra" href="/about">about</a></li>
+        <li><a class="extra" href="/archive">archive</a></li>
+      </ul>
+      <ul class="contact">
+        <li>Github: <a href="https://github.com/dtulig">github.com/dtulig</a></li>
+        <li>Twitter: <a href="https://twitter.com/dtulig">twitter.com/dtulig</a></li>
+      </ul>
+    </div>
     <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <a class="extra" href="/">home</a>
-        <a class="extra" href="/talks">talks</a>
-        <a class="extra" href="/about">about</a>
-      </div>
-
       {{ content }}
-
-      <div class="footer">
-        <div class="contact">
-          <p>
-            David Tulig<br />
-            Software Engineer
-          </p>
-        </div>
-        <div class="contact">
-          <p>
-            <a href="https://github.com/dtulig">github.com/dtulig</a><br />
-            <a href="https://twitter.com/dtulig">twitter.com/dtulig</a><br />
-          </p>
-        </div>
-      </div>
     </div>
   </body>
 </html>

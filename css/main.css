@@ -16,7 +16,7 @@ body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
-  text-align: center;
+  text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,9 +25,24 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #08C; }
+a:hover   { color: #005580; }
+a:visited { color: #08C; }
+
+ul li {
+    list-style: none;
+}
+
+h1, h2 {
+    font-size: 150%;
+}
+
+/* Color Table
+ * Accent Blue: #08c
+ * Accent Blue Dark: #005580
+ * Dark Gray: #333
+ * Light Gray: #999
+ */
 
 /*****************************************************************************/
 /*
@@ -49,6 +64,50 @@ a:visited { color: #a0a; }
   font-size: 80%;
 }
 
+/*
+ * Sidebar
+ */
+.sidebar {
+    color: #333;
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 0em 5em;
+    position: fixed;
+    width: 20em;
+}
+
+.sidebar .title a {
+    text-decoration: none;
+}
+
+.sidebar .title a:hover {
+    text-decoration: underline;
+}
+
+.sidebar .byline,
+.sidebar .title {
+    margin: 0;
+}
+
+.sidebar .navigation {
+    line-height: 150%;
+}
+
+.sidebar .navigation,
+.sidebar .contact {
+    margin: 2em 0;
+}
+
+.sidebar .contact {
+    position: fixed;
+    bottom: 2em;
+    font-size: 90%;
+}
+
+.sidebar .title {
+    font-size: 135%;
+}
+
 /*****************************************************************************/
 /*
 /* Site
@@ -57,37 +116,19 @@ a:visited { color: #a0a; }
 
 .site {
   font-size: 115%;
+  line-height: 1.5em;
+  margin: 3em 30em 2em;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+}
+
+.site .post_date {
+    float: right;
 }
 
 .header a {
   font-weight: bold;
   text-decoration: none;
-}
-
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.title a {
-  color: #a00;
-}
-
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  color: #000;
 }
 
 .meta {
