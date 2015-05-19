@@ -1,4 +1,16 @@
-name: David Tulig
-markdown: redcarpet
-pygments: true
 permalink: /:categories/:title
+
+title: David Tulig
+tagline: Software Engineer
+url: http://www.davidtulig.com
+baseurl: ""
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+author:
+  name: David Tulig
+  url: https://twitter.com/dtulig
+  github_url: https://github.com/dtulig
+  email: david.tulig@gmail.com

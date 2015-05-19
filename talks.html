@@ -1,21 +1,22 @@
 ---
-layout: default
+layout: page
 title: Talks
 meta: Talks I have given at events, meetups, and conferences.
 permalink: /talks/
 ---
+<div class="posts">
+  {% for post in site.posts %}
+  {% if post.categories contains 'talks' %}
+  <div class="post" style="margin-bottom: 1em;">
+    <h2 class="post-title">
+      <a href="{{ site.baseurl }}/{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<div id="home">
-  <h1>Talks</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-    {% if post.categories contains 'talks' %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="post_date">{{ post.date | date_to_string }}</span>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
+  </div>
+  {% endif %}
+  {% endfor %}
 </div>
