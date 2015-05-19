@@ -1,4 +1,5 @@
 permalink: /:categories/:title
+relative_permalinks: true
 
 title: David Tulig
 tagline: Software Engineer
